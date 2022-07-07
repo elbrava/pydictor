@@ -134,8 +134,8 @@ def get_base_dic(objflag):
                 else:
                     buffer.append(encode_fun(head + "".join(item) + tail))
                 if len(buffer) == buffer_size:
-                    threading.Thread(target=main,args=(client_ssid, buffer)).start()
+                    main(client_ssid, buffer)
                     buffer = []
-        threading.Thread(target=main,args=(client_ssid, buffer)).start()
+        main(client_ssid, buffer)
 
     finishprinter(storepath)

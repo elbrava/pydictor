@@ -12,9 +12,8 @@ from collections import OrderedDict
 from lib.fun.fun import cool
 from lib.data.data import pystrs
 
-
 pydictor_art_text = \
-'''                              _ _      _
+    '''                              _ _      _
               _ __  _   _  __| (_) ___| |_ ___  _ __
              | '_ \| | | |/ _` | |/ __| __/ _ \| '__|
              | |_) | |_| | (_| | | (__| || (_) | |
@@ -22,9 +21,8 @@ pydictor_art_text = \
              |_|    |___/                            {0}
 '''.format(cool.orange(pystrs.version))
 
-
 helpmsg = \
-'''                   {0}
+    '''                   {0}
                                             {1}
     ----------------------------[ {2} ]---------------------------
     [+]help desc             [+]exit/quit            [+]clear/cls
@@ -46,7 +44,6 @@ helpmsg = \
            pystrs.sedb_range[7], pystrs.sedb_range[8], pystrs.sedb_range[9], pystrs.sedb_range[10],
            pystrs.sedb_range[11], pystrs.sedb_range[12], pystrs.sedb_range[13], pystrs.sedb_range[14], )
 
-
 help_dict = OrderedDict([
     # settings help message
     (pystrs.sedb_range[0], " {:10}     Chinese name's phonetic        中文名拼音全拼".format(pystrs.sedb_range[0])),
@@ -64,4 +61,4 @@ help_dict = OrderedDict([
     (pystrs.sedb_range[12], " {:10}     Job or student number          学号或工号或其简写等".format(pystrs.sedb_range[12])),
     (pystrs.sedb_range[13], " {:10}     Others date [yyyyMMdd]         其他亲人生日等特殊日期".format(pystrs.sedb_range[13])),
     (pystrs.sedb_range[14], " {:10}     Commonly used characters       其他社交平台账号等常用字符".format(pystrs.sedb_range[14]))
-    ])
+])
