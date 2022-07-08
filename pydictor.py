@@ -108,6 +108,7 @@ def init():
 if __name__ == '__main__':
     print("{}".format(cool.green(pydictor_art_text)))
     init()
+    print("here")
     if pyoptions.args_base:
         get_base_dic(pyoptions.args_base)
     elif pyoptions.args_char:
